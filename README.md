@@ -19,7 +19,7 @@ The goals / steps of this project are the following:
 [video1]: ./test.mp4
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/513/view) Points
-###Here I will consider the rubric points individually and describe how I addressed each point in my implementation.  
+### Here I will consider the rubric points individually and describe how I addressed each point in my implementation.  
 
 ---
 ### Writeup / README
@@ -28,9 +28,9 @@ The goals / steps of this project are the following:
 
 You're reading it!
 
-###Histogram of Oriented Gradients (HOG)
+### Histogram of Oriented Gradients (HOG)
 
-####1 . Explain how (and identify where in your code) you extracted HOG features from the training images.
+#### 1 . Explain how (and identify where in your code) you extracted HOG features from the training images.
 
 The code for this step is contained in the IPython notebook titled `vehicle_detection.ipynb` in the functions `get_hog_features` and `extract_features`
 
