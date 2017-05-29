@@ -53,15 +53,15 @@ In the lesson I had played around with a number of HOG parameters as well. I set
 
 I trained a linear SVM using scikit-learn's `LinearSVC`. I split the data using scikit-learn's `train_test_split` function to create training data and test data. This code is under the header in the iPython notebook titled "Using a Linear Classifier".
 
-###Sliding Window Search
+### Sliding Window Search
 
-####1. Describe how (and identify where in your code) you implemented a sliding window search.  How did you decide what scales to search and how much to overlap windows?
+#### 1. Describe how (and identify where in your code) you implemented a sliding window search.  How did you decide what scales to search and how much to overlap windows?
 
 I decided to, by default, start at the edge of the image and search across the entire image, but this variable could be adjusted according to where it was important to look in the image. When I actually ran the pipeline on the video, I used different start and stop values for the window search. I decided to use an overlap of 0.5, so as to not miss anything important, but not any smaller, or it would take a much longer time.
 
 ![alt text][image3]
 
-####2 . Show some examples of test images to demonstrate how your pipeline is working.  What did you do to optimize the performance of your classifier?
+#### 2 . Show some examples of test images to demonstrate how your pipeline is working.  What did you do to optimize the performance of your classifier?
 
 I decided to use the YCrCb color space, and searched on all HOG channels with spatially binned color and histograms of color in the feature vector, which provided a nice result.  Here are some example images:
 
